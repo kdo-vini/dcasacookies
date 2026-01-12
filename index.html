@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>D'Casa | Cookies Artesanais e Momentos Especiais</title>
+    <meta name="description"
+        content="🍪 Cookies artesanais feitos com amor! Receitas legítimas, ingredientes premium e muito sabor. Peça já seus cookies favoritos pelo WhatsApp.">
+    <meta name="keywords" content="cookies artesanais, d'casa cookies, cookies recheados, delivery cookies, cookies sp">
+    <meta name="author" content="D'Casa Cookies">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Bakery",
+        "name": "D'Casa Cookies",
+        "description": "Cookies artesanais premium feitos com a legítima receita.",
+        "url": "https://dcasa.com.br",
+        "telephone": "+5514981392626",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Promissão",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="./media/logo.png" alt="D'Casa Cookies">
+            </a>
+
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#cardapio" class="nav-link">Cardápio</a></li>
+                    <li><a href="#galeria" class="nav-link">Galeria</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <a href="#cardapio" class="btn btn-primary btn-header">Peça Agora</a>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Cookies Artesanais que Derretem na Boca</h1>
+                <p class="hero-description">
+                    Receita legítima. Macios por fora, suculentos por dentro. Feitos com amor em Promissão.
+                </p>
+                <div class="hero-cta">
+                    <a href="#cardapio" class="btn btn-primary btn-large">Ver Cardápio</a>
+                    <a href="https://www.instagram.com/dcasa_cookiescoffee/" class="btn btn-secondary btn-large"
+                        target="_blank">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Role para baixo</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section class="section section-about" id="sobre">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-badge">Nossa História</span>
+                    <h2 class="section-title">Sobre a D'Casa</h2>
+                    <p>
+                        A D'Casa nasceu da paixão por criar momentos doces e inesquecíveis. Nossos cookies são
+                        produzidos artesanalmente, garantindo textura e sabor incomparáveis em cada mordida.
+                    </p>
+                    <p>
+                        Usamos apenas ingredientes selecionados para entregar a você o verdadeiro sabor do cookie
+                        americano, fresco e quentinho.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="./media/minicookies copobolha.jpeg" alt="Mini Cookies D'Casa">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cardápio Section -->
+    <section class="section section-menu" id="cardapio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nosso Cardápio</h2>
+                <div class="menu-type-selector">
+                    <button class="type-btn active" data-type="tradicional">Cookies Clássicos</button>
+                    <button class="type-btn" data-type="especial">Cookies Especiais</button>
+                    <button class="type-btn" data-type="combo">Combos</button>
+                </div>
+            </div>
+
+            <div id="menu-container" class="menu-grid">
+                <!-- JavaScript renderiza aqui -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria/Carousel Section -->
+    <section class="section section-gallery" id="galeria">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Nossos Sabores</span>
+                <h2 class="section-title">Galeria de Cookies</h2>
+            </div>
+
+            <div class="carousel-container">
+                <div class="carousel-track" id="carousel-track">
+                    <div class="carousel-slide">
+                        <img src="./media/chocolate.jpeg" alt="Cookie de Chocolate">
+                        <div class="carousel-caption">Chocolate</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./media/nutella.jpeg" alt="Cookie de Nutella">
+                        <div class="carousel-caption">Nutella</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./media/ovomaltine.jpeg" alt="Cookie de Ovomaltine">
+                        <div class="carousel-caption">Ovomaltine</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./media/MM.jpeg" alt="Cookie M&M">
+                        <div class="carousel-caption">M&M</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./media/tradicionais.jpeg" alt="Cookies Tradicionais">
+                        <div class="carousel-caption">Tradicionais</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./media/cookiemordido.jpeg" alt="Cookie Mordido">
+                        <div class="carousel-caption">Irresistível</div>
+                    </div>
+                </div>
+
+                <button class="carousel-btn carousel-btn-prev" id="carousel-prev">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6" />
+                    </svg>
+                </button>
+                <button class="carousel-btn carousel-btn-next" id="carousel-next">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg>
+                </button>
+
+                <div class="carousel-dots" id="carousel-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Checkout -->
+    <div id="checkout-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Finalizar Pedido</h3>
+                <div class="header-actions">
+                    <button id="clear-cart-btn" class="btn-text">Limpar Sacola</button>
+                    <button id="close-modal-btn" class="close-btn">&times;</button>
+                </div>
+            </div>
+
+            <div class="modal-body">
+                <div id="cart-items-preview" class="cart-preview">
+                    <!-- Itens do carrinho aparecem aqui -->
+                </div>
+
+                <div class="cart-summary-row">
+                    <span>Subtotal:</span>
+                    <span id="modal-subtotal">R$ 0,00</span>
+                </div>
+
+                <form id="checkout-form">
+                    <div class="form-group">
+                        <label for="customer-name">Seu Nome:</label>
+                        <input type="text" id="customer-name" required placeholder="Ex: João Silva">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Forma de Entrega:</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="delivery-type" value="retirada" checked>
+                                <span>Retirada (Grátis)</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="delivery-type" value="delivery">
+                                <span>Delivery (+ R$ 8,00)</span>
+                            </label>
+                        </div>
+                        <small id="delivery-note" class="hidden text-muted">* Taxa fixa para Promissão. Outras cidades a
+                            combinar.</small>
+                    </div>
+
+                    <div id="address-group" class="form-group hidden">
+                        <label for="delivery-address">Endereço de Entrega:</label>
+                        <textarea id="delivery-address" rows="2"
+                            placeholder="Rua, Número, Bairro, Referência..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="payment-method">Forma de Pagamento:</label>
+                        <select id="payment-method" required>
+                            <option value="Pix">Pix</option>
+                            <option value="Dinheiro">Dinheiro</option>
+                            <option value="Cartão de Crédito">Cartão de Crédito</option>
+                            <option value="Cartão de Débito">Cartão de Débito</option>
+                        </select>
+                    </div>
+
+                    <div id="cash-change-group" class="form-group hidden">
+                        <div class="checkbox-wrapper">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="need-change">
+                                <span>Preciso de troco</span>
+                            </label>
+                        </div>
+                        <div id="change-value-wrapper" class="hidden">
+                            <label for="change-value">Troco para quanto?</label>
+                            <input type="text" id="change-value" placeholder="Ex: R$ 50,00">
+                        </div>
+                    </div>
+                </form>
+
+                <div class="cart-total-row">
+                    <span>Total Final:</span>
+                    <span id="modal-total-final">R$ 0,00</span>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" id="send-order-btn" class="btn btn-primary btn-full">
+                    Enviar Pedido no WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="section section-faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Dúvidas Frequentes</span>
+                <h2 class="section-title">Tire suas Dúvidas</h2>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Como faço para encomendar?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Basta escolher seus cookies favoritos no nosso cardápio digital, clicar em "Ver Sacola" e
+                            enviar seu pedido pelo WhatsApp. É rápido e prático!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Fazem entrega (delivery)?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Fazemos delivery em Promissão e região. Consulte as taxas de entrega ao finalizar seu
+                            pedido pelo WhatsApp.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Os cookies chegam quentinhos?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nossos pedidos são preparados com carinho para garantir a melhor experiência. Se preferir,
+                            você pode aquecê-los por 15-20 segundos no micro-ondas para aquele efeito "acabou de sair do
+                            forno"!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato e Localização -->
+    <section class="section section-contact" id="contato">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Retire seus cookies</span>
+                <h2 class="section-title">Contato & Localização</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-card-content">
+                            <h3>Endereço</h3>
+                            <p>Rua Alegria Grama, 153<br>Promissão - SP</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-card-content">
+                            <h3>WhatsApp</h3>
+                            <p><a href="https://wa.me/5514981392626" target="_blank" rel="noopener">(14) 98139-2626</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📷</div>
+                        <div class="contact-card-content">
+                            <h3>Instagram</h3>
+                            <p><a href="https://www.instagram.com/dcasa_cookiescoffee/" target="_blank"
+                                    rel="noopener">@dcasa_cookiescoffee</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">⏰</div>
+                        <div class="contact-card-content">
+                            <h3>Horário</h3>
+                            <p>Produção aos sábados<br>Encomendas pelo WhatsApp</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3698.8!2d-49.8586!3d-21.5372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94befa5e0e0e0e0f%3A0x0!2sRua%20Alegria%20Grama%2C%20153%20-%20Promiss%C3%A3o%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                        width="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Cart -->
+    <div id="floating-cart" class="floating-cart hidden">
+        <div class="cart-info">
+            <span class="cart-count">0 itens</span>
+            <span class="cart-total">R$ 0,00</span>
+        </div>
+        <button id="open-cart-btn" class="btn btn-white btn-sm">Ver Sacola</button>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="./media/logo.png" alt="D'Casa Cookies" class="footer-logo">
+                    <p>Cookies artesanais feitos com amor em Promissão.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#cardapio">Cardápio</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li>
+                            <a href="https://wa.me/5514981392626" target="_blank" rel="noopener">
+                                📱 (14) 98139-2626
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/dcasa_cookiescoffee/" target="_blank" rel="noopener">
+                                📷 @dcasa_cookiescoffee
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-location">
+                    <h4>Localização</h4>
+                    <p>Promissão - SP</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 D'Casa Cookies. Desenvolvido por <a href="https://techneia.com.br/" target="_blank"
+                        rel="noopener">Téchne Sistemas</a>.</p>
+                <p class="footer-tagline">Feito com 🍪 em Promissão, SP</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
