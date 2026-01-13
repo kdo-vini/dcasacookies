@@ -1428,13 +1428,18 @@ a {
         padding: 24px;
         transform: translateY(-100%);
         opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
         transition: all var(--transition-base);
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        z-index: 999;
     }
 
     .nav.active {
         transform: translateY(0);
         opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
     }
 
     .nav-list {
